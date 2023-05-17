@@ -1,0 +1,62 @@
+html {
+    overflow-y: scroll;
+}
+body {
+    background-color: antiquewhite;
+}
+* {
+    box-sizing: border-box;
+}
+header, main, nav, footer, section, article, figure, figcaption,
+aside {
+    display: block;
+}
+#wrapper {
+    max-width: 960px;
+    margin: 0% auto;
+}
+input, #addMeetingButton {
+    border: none;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 20em;
+    height: 3em;
+}
+#meetingsHeading {
+    display: none;
+}
+input {
+    padding-left: 10px;
+}
+h2 {
+    text-align: center;
+}
+#orderedList {
+    max-width: 570px;
+    margin: 0 auto;
+}
+.removeMeetingButton {
+    float: right;
+}
+ul h2 {
+    text-align: center;
+}
+ul li {
+    list-style-type: none;
+    padding-bottom: 1em;
+}
+main {
+    background-color: gray;
+    box-shadow: 0 0 30px 3px black;
+    border-radius: 5px;
+    min-height: 500px;
+}
+form {
+    padding: 8em;
+}
+footer {
+    text-align: center;
+    padding-top: 5em;
+}

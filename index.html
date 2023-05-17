@@ -1,0 +1,62 @@
+<!-- Create a website that allows a user to enter details in for a new UCC Tech Club Meeting and 
+will present a sorted list of meetings (in chronological order).  Your submission should 
+match the following screen shots.  Note the presence of a meeting list "header" that will 
+appear after the first meeting is entered.  Also note that any missing fields will 
+present an error message above the meeting list "header" indicating that all fields must 
+be entered.  Each new meeting will have a delete button that a user can click to remove 
+the meeting from the list. -->
+
+<!-- Alexander Spurlock
+alexanderspurlock@gmail.com -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css-files/main-css.css"\>
+    <script src="js-files/main-js.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>
+            Schedule A Meeting!       
+        </h2>
+    </header>
+    
+    <div id="wrapper">
+
+        <main>
+
+           <!-- create FORM -->
+           <!-- IDs == speaker, session, date -->
+           <form action="#" method="post" id="form">
+               <input type="text" name="speaker" id="speaker" placeholder="Speaker" required><br>
+               <input type="text" name="session" id="session" placeholder="Session Title" required><br> 
+               <input type="date" name="date" id="date" required><br>
+
+               <button id="addMeetingButton" 
+               onclick="document.getElementById('form').onsubmit = addDateSessionSpeaker;">
+               Add Meeting!</button>
+
+               <!-- <input type="submit" value="Add Meeting!" id="submit"> -->
+                <div id="orderedList"></div>
+
+           </form>
+            
+        </main>
+
+    </div>
+
+    <footer>
+        <small>
+            <b>
+            FALL 2019<br />alexanderspurlock@gmail.com
+            </b>
+        </small>
+    </footer>
+    
+</body>
+</html>
